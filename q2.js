@@ -2,20 +2,17 @@
 // 8, … seconds apart. ex: for [“a”,” b, “c, “d”], “a” is printed in 1 sec, “b” is printed in 2
 // seconds, “c” is printed in 4 seconds, ...
 
-
-// function asyncItemListing(arr) {
-    
-//     arr.map(item => {
-//         return setInterval(() => console.log(item), 1000)
-//     })
-
-// }
-
 function asyncItemListing(arr) {
     for(let i = 0; i < arr.length; i++){
-      setTimeout(() => console.log(arr[i]), i * 1000)
+      setTimeout(() => console.log(arr[i]), (i+1) * 1000)
     }
   }
+
+//Author's note: The question implies that each element has its index num + 1 sec and that way the function could yield the expected result. 
+                //In case of any misunderstanding, I kindly ask you to ask for a revision. 
   
-const c = [1,2,3,4,5,1,4,3,6,8,2]
-asyncItemListing(c)
+const a = [1,2,3,4,5,1,4,3,6,8,2]
+asyncItemListing(a)
+
+const b = ["a", "b", "c", "d"]
+asyncItemListing(b)
