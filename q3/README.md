@@ -1,1 +1,2 @@
-![](May-28-2020 12-43-47.gif)
+# GIF
+- See the gif in the same directory to see how it looks in the browser!
