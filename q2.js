@@ -14,5 +14,5 @@ function asyncItemListing(arr) {
 const a = [1,2,3,4,5,1,4,3,6,8,2]
 asyncItemListing(a)
 
-const b = ["a", "b", "c", "d"]
-asyncItemListing(b)
+// const b = ["a", "b", "c", "d"]
+// asyncItemListing(b)
